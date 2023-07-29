@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -15,7 +16,10 @@ import {
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoJusticeWorks from '@/images/logos/justice-works.svg'
+import logoBoostability from '@/images/logos/boostability.svg'
+import logoChurchOfJesusChrist from '@/images/logos/church-of-jesus-christ-of-latter-day-saints.jpeg';
+import logoInsideSales from '@/images/logos/inside-sales.jpeg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -108,10 +112,40 @@ function SocialLink({ icon: Icon, ...props }) {
 }
 
 function Newsletter() {
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const data = {
+      email_address: email,
+      status: 'subscribed',
+    };
+
+    const url = 'https://us11.api.mailchimp.com/3.0/lists/726952';
+
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        Authorization: `apikey ${process.env.MAILCHIMP_API}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      // Handle success
+      console.log('Subscribed successfully');
+    } else {
+      // Handle error
+      console.log('Error in subscription');
+    }
+  };
   return (
     <form
       action="/thank-you"
       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
+      onSubmit={handleSubmit}
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="h-6 w-6 flex-none" />
@@ -126,6 +160,8 @@ function Newsletter() {
           placeholder="Email address"
           aria-label="Email address"
           required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
         />
         <Button type="submit" className="ml-4 flex-none">
@@ -139,9 +175,9 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
+      company: 'The Church of Jesus Christ of Latter-day Saints',
+      title: 'Software Engineer III',
+      logo: logoChurchOfJesusChrist,
       start: '2019',
       end: {
         label: 'Present',
@@ -149,25 +185,32 @@ function Resume() {
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
+      company: 'Xant/Inside Sales',
+      title: 'Software Engineer',
+      logo: logoInsideSales,
+      start: '2021',
+      end: '2021',
+    },
+    {
+      company: 'Boostability',
+      title: 'Frontend Developer',
+      logo: logoBoostability,
+      start: '2020',
+      end: '2021',
+    },
+    {
+      company: 'The Church of Jesus Christ of Latter-day Saints',
+      title: 'Software Engineer I',
+      logo: logoChurchOfJesusChrist,
+      start: '2019',
+      end: '2020',
+    },
+    {
+      company: 'Justice Works',
+      title: 'Web Developer',
+      logo: logoJusticeWorks,
+      start: '2017',
       end: '2019',
-    },
-    {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
     },
   ]
 
@@ -251,42 +294,43 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Spencer Sharp - Software designer, founder, and amateur astronaut
+          Saia Fonua - Software developer, engineer, and amateur chef
         </title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I’m Saia, a software designer and entrepreneur based in Lehi, Utah. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Software developer, engineer, and amateur chef.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+          Hi, I'm Saia. A software developer based in Lehi, Utah with a knack for crafting innovative apps and intriguing/interesting dishes. Balancing tech and health, always learning, always growing.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com"
+              target="__blank"
+              href="https://twitter.com/saiafonua"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
-            />
+              />
             <SocialLink
-              href="https://instagram.com"
+              target="__blank"
+              href="https://www.instagram.com/siosaiafonua/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
-            />
+              />
             <SocialLink
-              href="https://github.com"
+              target="__blank"
+              href="https://github.com/sfonua10"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
-            />
+              />
             <SocialLink
-              href="https://linkedin.com"
+              target="__blank"
+              href="https://www.linkedin.com/in/saiafonua/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />

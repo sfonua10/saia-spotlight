@@ -8,42 +8,47 @@ import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoManta from '@/images/logos/manta.png'
+import logoDefenderData from '@/images/logos/defenderData.png';
+import logoSearch from '@/images/logos/search.png'
+import logoCalendar from '@/images/logos/calendar.png'
+import logoClerk from '@/images/logos/clerk.png'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Search',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'React-based app that enables users to search across Church websites. It allows refining and filtering search results. It is powered by Google Programmable Search service. There is another page powered by Gospel Library Archive Search Service based on the Content Search Service use in the Gospel Library Mobile app ',
+    link: { href: 'https://www.churchofjesuschrist.org/search', label: 'public' },
+    logo: logoSearch,
   },
   {
-    name: 'Animaginary',
+    name: 'Calendar',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'Internal Church calendar for members to track events. Users can create, delete both calendars and events for a calendar and manage building schedulers for buildings and calendar editors',
+    link: { href: '#', label: 'internal' },
+    logo: logoCalendar,
   },
   {
-    name: 'HelioStream',
+    name: 'LCR',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+      'LCR allows clerks to view and update membership records, track callings and ordinations, record service hours, manage event calendars, and generate reports',
+    link: { href: '#', label: 'internal' },
+    logo: logoClerk,
   },
   {
-    name: 'cosmOS',
+    name: 'Manta',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
+      'online small business directory and resources site for small business owners. It provides listings, reviews, articles, and tools.',
+    link: { href: 'https://www.manta.com/', label: 'internal' },
+    logo: logoManta,
   },
   {
-    name: 'OpenShuttle',
+    name: 'defenderData',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'defenderData is a case management software designed for criminal defense attorneys and public defenders. It helps them manage their caseloads, documents, billing, etc.',
+    link: { href: 'https://www.justiceworks.com/products/', label: 'internal' },
+    logo: logoDefenderData,
   },
 ]
 
@@ -62,15 +67,15 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>Projects - Saia Fonua</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="My impactful contributions: projects that have left a mark"
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="My impactful contributions: projects that have left a mark"
+        intro="Discover the variety of projects I've been a part of, highlighting the unique contributions I've made and the tangible impacts they've had. These experiences range from individual coding challenges to collaborative efforts, each one enriching my journey as a developer."
       >
         <ul
           role="list"

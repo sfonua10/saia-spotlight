@@ -1,0 +1,34 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Saia Fonua',
+  date: '2022-07-14',
+  title: 'Understanding Web Caching: The Storehouse of Information',
+  description:
+    'This article demystifies the concept of caching by breaking it down into its basic elements. It explains how web caching works, the benefits it provides, and explores common caching locations. It is a must-read for anyone looking to optimize web performance and efficiently manage data requests.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+# A Spot to Put Stuff So You Don't Have to Go Get It Later Again - Ryan Florence
+
+Caching can be a complex concept, but we can simplify it by thinking of caching as a type of storage, a 'spot to put stuff' as Ryan Florence so succinctly puts it. It's like a temporary storehouse of information and data that's easily accessible.
+
+Consider web caching as an example. Here's how it works:
+
+When a client (like your web browser) requests resources, it first checks the cache. If the needed data is found there, the client pulls it directly from the cache. However, if the data isn't available in the cache, the client sends a request to the server.
+
+The server then sends a response back to the client, which is then cached (stored) for future use. The next time the client makes the same request, it won't need to bother the server; it'll simply retrieve the data directly from the cache.
+
+This caching mechanism provides several benefits:
+
+- *Fast response times*: Since requests aren't always going to the server, you get faster responses.
+- *Decreased bandwidth usage*: With less data being sent back and forth between client and server, you'll use less bandwidth.
+
+Now, let's look at a few common caching locations:
+
+- *Browser Cache*: This cache stores responses locally on your device. Your web browser uses it to speed up the loading of web pages.
+- *Proxy Server Cache*: A proxy server (often set up by an ISP or an organization) caches responses that can be used by multiple clients.
+- *Reverse Proxy Cache*: A reverse proxy server sits in front of one or more servers and caches responses to improve load times and reduce server load.
+
+Lastly, it's important to note that the client uses HTTP headers to manage caching. These headers determine how, when, and what data should be cached. Mastering their use is key to effectively managing caching and optimizing performance.

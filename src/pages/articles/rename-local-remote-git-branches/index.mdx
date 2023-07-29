@@ -1,0 +1,53 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+import designSystem from './planetaria-design-system.png'
+
+export const meta = {
+  author: 'Saia Fonua',
+  date: '2022-11-15',
+  title: 'Rename local and remote branches with GIT',
+  description:
+    'Step by step process in renaming local and remote branches with GIT',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+## How do I rename my local and remote branch?
+
+### Rename Local Branch
+
+In your command prompt window or terminal, checkout the branch you want to rename with this command: 
+
+`git checkout feat/exact-match`
+
+you're now currently on `feat/exact-match`
+
+then to rename the branch run this command:
+
+`git branch -m feat-CARD-123-exact-match`
+
+locally, your branch is now `feat-CARD-123-exact-match`
+
+You can alternatively run this to change the name:
+
+`git branch -m feat/exact-match feat-CARD-123-exact-match`
+
+## Rename Remote Branch
+In order to rename the branch remotely, you actually have to delete the remote branch and push your new branch name up to your version control system
+
+`git push origin --delete feat/exact-match`
+
+You can confirm that it's deleted by looking in github if the branch is gone.
+Set upstream branch to new branch, with this command:
+`git push origin -u feat-CARD-123-exact-match`
+
+Confirm on github that your new branch is there.
+
+
+## Situation
+I created a branch off of our main branch and called it something like feat/alphabetize-countries-in-columns-first. Our lead developer asked me to rename the branch by adding in the card number in there to allow us to go back in the git history, and understand which branches are associated with which JIRA cards to provide a better understanding and context on why certain code changes were made. 
+
+The naming convention we have defined for our git branches will start with the word feature or bugfix, then the card number and description of ticket. For example, something like this feature/CARD-55-add-a-toggle-for-dark-mode or bugfix/CARD-75-persist-input-state-on-tab-change. 
+
+## Task
+I starting searching online how to change a branch locally and remotely on git. I read a few articles but then ended up watching a short youtube video where someone is actually running the commands and showing the branch with the new name locally and remotely. I decided I would write this blog about it and create a video as well to help solidify my understanding of what I learned.

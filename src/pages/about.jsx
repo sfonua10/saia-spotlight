@@ -11,6 +11,7 @@ import {
   TwitterIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
+import saiaSuit from '@/images/saia-suit.png'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -41,10 +42,10 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Spencer Sharp</title>
+        <title>About - Saia Fonua</title>
         <meta
           name="description"
-          content="I’m Spencer Sharp. I live in New York City, where I design the future."
+          content="I’m Saia Fonua. I live in Lehi, Utah, where I design the future."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -52,7 +53,7 @@ export default function About() {
           <div className="lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <Image
-                src={portraitImage}
+                src={saiaSuit}
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
@@ -61,35 +62,53 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Spencer Sharp. I live in New York City, where I design the
-              future.
+              I’m Saia Fonua. I live in Lehi, Utah, where I design the future.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I’ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old, just two weeks
-                after my mom brought home the brand new Macintosh LC 550 that I
-                taught myself to type on.
+                I'm Saia Fonua and I reside in Lehi, Utah, where I craft the
+                digital future. My journey into the world of technology and
+                software engineering is an unconventional one. It began when I
+                was studying Linguistics at Brigham Young University, where a
+                Computational Linguistics course introduced me to PERL
+                programming language. This sparked a fascination within me that
+                would later evolve into my career.
               </p>
               <p>
-                The only thing I loved more than computers as a kid was space.
-                When I was 8, I climbed the 40-foot oak tree at the back of our
-                yard while wearing my older sister’s motorcycle helmet, counted
-                down from three, and jumped — hoping the tree was tall enough
-                that with just a bit of momentum I’d be able to get to orbit.
+                After graduating in 2015, I started working as an IT Tech
+                Specialist at Zion's Bank. The job involved troubleshooting and
+                assisting internal employees with their tech issues. However,
+                when the problems were too complex, I had to refer them to the
+                developers. Seeing their problem-solving skills in action
+                reminded me of my computational linguistics class and kindled a
+                desire within me to dive deeper into the world of code.
               </p>
               <p>
-                I spent the next few summers indoors working on a rocket design,
-                while I recovered from the multiple surgeries it took to fix my
-                badly broken legs. It took nine iterations, but when I was 15 I
-                sent my dad’s Blackberry into orbit and was able to transmit a
-                photo back down to our family computer from space.
+                The seed was sown, and in a moment of epiphany at a public
+                library, I resolved to learn to code. Acting on my instincts and
+                faith, I enrolled in a coding bootcamp in the fall of 2016. By
+                summer 2017, I had landed my first job as a web developer.
               </p>
               <p>
-                Today, I’m the founder of Planetaria, where we’re working on
-                civilian space suits and manned shuttle kits you can assemble at
-                home so that the next generation of kids really <em>can</em>{' '}
-                make it to orbit — from the comfort of their own backyards.
+                Growing up, I was always drawn to video games such as Starcraft,
+                Warcraft, Age of Empires, and Halo. While these didn't directly
+                influence my career choice, they certainly cultivated my love
+                for technology and complex systems.
+              </p>
+              <p>
+                Currently, I'm employed as a software engineer at the Church of
+                Jesus Christ of Latter-day Saints. My work revolves around the
+                Search, Calendar, Gospel Media, and LCR projects, where I put my
+                skills into action to provide impactful solutions.
+              </p>
+              <p>
+                As for the future, my vision is to continue growing as a
+                developer. I'm exploring the idea of stepping into a management
+                role or advancing to a staff/principal engineer position.
+                Someday, I might even start my own company or develop an
+                innovative app. Regardless of where my journey takes me, I am
+                excited about the endless possibilities that lie ahead in the
+                realm of technology and software development.
               </p>
             </div>
           </div>
@@ -108,11 +127,11 @@ export default function About() {
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
-                href="mailto:spencer@planetaria.tech"
+                href="mailto:saiafonua@gmail.com"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                spencer@planetaria.tech
+                saiafonua@gmail.com
               </SocialLink>
             </ul>
           </div>
