@@ -62,11 +62,11 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Saia Fonua. I live in Lehi, Utah, where I design the future.
+              I&apos;m Saia Fonua. I live in Lehi, Utah, where I design the future.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I'm Saia Fonua and I reside in Lehi, Utah, where I craft the
+                I&apos;m Saia Fonua and I reside in Lehi, Utah, where I craft the
                 digital future. My journey into the world of technology and
                 software engineering is an unconventional one. It began when I
                 was studying Linguistics at Brigham Young University, where a
@@ -76,7 +76,7 @@ export default function About() {
               </p>
               <p>
                 After graduating in 2015, I started working as an IT Tech
-                Specialist at Zion's Bank. The job involved troubleshooting and
+                Specialist at Zion&apos;s Bank. The job involved troubleshooting and
                 assisting internal employees with their tech issues. However,
                 when the problems were too complex, I had to refer them to the
                 developers. Seeing their problem-solving skills in action
@@ -91,19 +91,19 @@ export default function About() {
               </p>
               <p>
                 Growing up, I was always drawn to video games such as Starcraft,
-                Warcraft, Age of Empires, and Halo. While these didn't directly
+                Warcraft, Age of Empires, and Halo. While these didn&apos;t directly
                 influence my career choice, they certainly cultivated my love
                 for technology and complex systems.
               </p>
               <p>
-                Currently, I'm employed as a software engineer at the Church of
+                Currently, I&apos;m employed as a software engineer at the Church of
                 Jesus Christ of Latter-day Saints. My work revolves around the
                 Search, Calendar, Gospel Media, and LCR projects, where I put my
                 skills into action to provide impactful solutions.
               </p>
               <p>
                 As for the future, my vision is to continue growing as a
-                developer. I'm exploring the idea of stepping into a management
+                developer. I&apos;m exploring the idea of stepping into a management
                 role or advancing to a staff/principal engineer position.
                 Someday, I might even start my own company or develop an
                 innovative app. Regardless of where my journey takes me, I am

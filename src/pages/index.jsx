@@ -307,7 +307,7 @@ export default function Home({ articles }) {
             Software developer, engineer, and amateur chef.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Hi, I'm Saia. A software developer based in Lehi, Utah with a knack for crafting innovative apps and intriguing/interesting dishes. Balancing tech and health, always learning, always growing.
+          Hi, I&apos;m Saia. A software developer based in Lehi, Utah with a knack for crafting innovative apps and intriguing/interesting dishes. Balancing tech and health, always learning, always growing.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
