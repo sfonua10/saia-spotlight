@@ -25,6 +25,12 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
+import image6 from '@/images/photos/image-6.jpg'
+import image7 from '@/images/photos/image-7.jpg'
+import image8 from '@/images/photos/image-8.jpg'
+import image9 from '@/images/photos/image-9.jpg'
+import image12 from '@/images/photos/image-12.jpg'
+import image13 from '@/images/photos/image-13.jpg'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -254,7 +260,7 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <Button href="/Saia-Fonua-Resume.pdf" download variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -268,7 +274,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {[image7, image8, image9, image13, image12].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
