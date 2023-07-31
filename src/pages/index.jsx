@@ -184,7 +184,7 @@ function Resume() {
       company: 'The Church of Jesus Christ of Latter-day Saints',
       title: 'Software Engineer III',
       logo: logoChurchOfJesusChrist,
-      start: '2019',
+      start: '2021',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
