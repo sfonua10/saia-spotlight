@@ -96,8 +96,7 @@ export default function About() {
                 for technology and complex systems.
               </p>
               <p>
-                Currently, I&apos;m employed as a software engineer at the Church of
-                Jesus Christ of Latter-day Saints. My work revolves around the
+                Currently, I&apos;m employed as a software engineer at Smith Johnson Tech. I work for one of their clients which revolves around the
                 Search, Calendar, Gospel Media, and LCR projects, where I put my
                 skills into action to provide impactful solutions.
               </p>

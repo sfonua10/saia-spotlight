@@ -20,6 +20,8 @@ import logoJusticeWorks from '@/images/logos/justice-works.svg'
 import logoBoostability from '@/images/logos/boostability.svg'
 import logoChurchOfJesusChrist from '@/images/logos/church-of-jesus-christ-of-latter-day-saints.jpeg';
 import logoInsideSales from '@/images/logos/inside-sales.jpeg'
+import logoSmithJohnsonTech from '@/images/logos/smith-john-tech.jpeg'
+import logoOasis from '@/images/logos/oasis.jpeg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -181,9 +183,9 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'The Church of Jesus Christ of Latter-day Saints',
+      company: 'Smith Johnson Tech',
       title: 'Software Engineer III',
-      logo: logoChurchOfJesusChrist,
+      logo: logoSmithJohnsonTech,
       start: '2021',
       end: {
         label: 'Present',
@@ -205,9 +207,9 @@ function Resume() {
       end: '2021',
     },
     {
-      company: 'The Church of Jesus Christ of Latter-day Saints',
+      company: 'ESG/Oasis',
       title: 'Software Engineer I',
-      logo: logoChurchOfJesusChrist,
+      logo: logoOasis,
       start: '2019',
       end: '2020',
     },
