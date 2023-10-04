@@ -13,6 +13,7 @@ import logoDefenderData from '@/images/logos/defenderData.png';
 import logoSearch from '@/images/logos/search.png'
 import logoCalendar from '@/images/logos/calendar.png'
 import logoClerk from '@/images/logos/clerk.png'
+import logoChat from '@/images/logos/chatlogo.png'
 
 const projects = [
   {
@@ -49,6 +50,13 @@ const projects = [
       'defenderData is a case management software designed for criminal defense attorneys and public defenders. It helps them manage their caseloads, documents, billing, etc.',
     link: { href: 'https://www.justiceworks.com/products/', label: 'internal' },
     logo: logoDefenderData,
+  },
+  {
+    name: 'Chat App',
+    description:
+      'Chat app, built with react, firebase hooks, and firebase, to communicate with others',
+    link: { href: 'https://sfonua10.github.io/react-chat-app/', label: 'public' },
+    logo: logoChat,
   },
 ]
 
