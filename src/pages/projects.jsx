@@ -17,6 +17,20 @@ import logoChat from '@/images/logos/chatlogo.png'
 
 const projects = [
   {
+    name: 'Chat App',
+    description:
+      'Chat app, built with react, firebase hooks, and firebase, to communicate with others',
+    link: { href: 'https://sfonua10.github.io/react-chat-app/', label: 'public' },
+    logo: logoChat,
+  },
+  {
+    name: 'PartSoft',
+    description:
+      'For mechanic shops to request parts to different vendors seamlessly with a click of a button sending SMS notifications and updating a dashboard in real time of part and price',
+    link: { href: 'https://part-soft.vercel.app/', label: 'public' },
+    logo: logoClerk,
+  },
+  {
     name: 'Search',
     description:
       'React-based app that enables users to search across Church websites. It allows refining and filtering search results. It is powered by Google Programmable Search service. There is another page powered by Gospel Library Archive Search Service based on the Content Search Service use in the Gospel Library Mobile app ',
@@ -29,13 +43,6 @@ const projects = [
       'Internal Church calendar for members to track events. Users can create, delete both calendars and events for a calendar and manage building schedulers for buildings and calendar editors',
     link: { href: '#', label: 'internal' },
     logo: logoCalendar,
-  },
-  {
-    name: 'LCR',
-    description:
-      'LCR allows clerks to view and update membership records, track callings and ordinations, record service hours, manage event calendars, and generate reports',
-    link: { href: '#', label: 'internal' },
-    logo: logoClerk,
   },
   {
     name: 'Manta',
@@ -52,11 +59,11 @@ const projects = [
     logo: logoDefenderData,
   },
   {
-    name: 'Chat App',
+    name: 'LCR',
     description:
-      'Chat app, built with react, firebase hooks, and firebase, to communicate with others',
-    link: { href: 'https://sfonua10.github.io/react-chat-app/', label: 'public' },
-    logo: logoChat,
+      'LCR allows clerks to view and update membership records, track callings and ordinations, record service hours, manage event calendars, and generate reports',
+    link: { href: '#', label: 'internal' },
+    logo: logoClerk,
   },
 ]
 
