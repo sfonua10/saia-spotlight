@@ -6,9 +6,6 @@ import remarkGfm from 'remark-gfm'
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'mdx'],
   reactStrictMode: true,
-  experimental: {
-    scrollRestoration: true,
-  },
 }
 
 const withMDX = nextMDX({
