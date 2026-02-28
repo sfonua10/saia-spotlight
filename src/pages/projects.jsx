@@ -3,9 +3,7 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
 import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoManta from '@/images/logos/manta.png'
@@ -64,6 +62,27 @@ const projects = [
       'LCR allows clerks to view and update membership records, track callings and ordinations, record service hours, manage event calendars, and generate reports',
     link: { href: '#', label: 'internal' },
     logo: logoClerk,
+  },
+  {
+    name: 'Hamilton Caskets',
+    description:
+      'Full-stack casket company website with product catalog, service area pages, contact forms, and an admin panel. Built with TanStack Start, React 19, PostgreSQL, and Drizzle ORM.',
+    link: { href: 'https://hamiltoncasket.com/', label: 'public' },
+    logo: logoOpenShuttle,
+  },
+  {
+    name: 'ULU Spa',
+    description:
+      'Luxury head spa website featuring glass morphism design, video backgrounds, and seamless MangoMint booking integration. Built with Next.js, React 19, and Tailwind CSS.',
+    link: { href: 'https://www.uluspas.com/', label: 'public' },
+    logo: logoCosmos,
+  },
+  {
+    name: 'Farm Built',
+    description:
+      'All-in-one platform for DSPD providers in Utah to manage service documentation, scheduling, client care plans, and team coordination. Built with React 19, Convex, and Stripe.',
+    link: { href: 'https://farmbuilt.org/', label: 'public' },
+    logo: logoPlanetaria,
   },
 ]
 
